@@ -1,84 +1,168 @@
-<div class="about-container">
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./images/logo.jpg" alt="logo">
-            </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="menu-bar">
-                <i class="fa-solid fa-bars" id="menu-bar"></i>
-                <i class="fa-solid fa-x" id="close-icon"></i>
-            </label>
-            <div class="nav-links">
-                <ul>
-                    <li><a routerLink="/home">Home</a></li>
-                    <li><a routerLink="/about" class="active">About</a></li>
-                    <li><a routerLink="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<div class="hero">
+  <nav>
+    <div class="logo">
+      <img src="./images/logo.jpg" alt="logo" />
+    </div>
+    <input type="checkbox" id="check" />
+    <label for="check" class="menu-bar">
+      <i class="fa-solid fa-bars" id="menu-bar"></i>
+      <i class="fa-solid fa-x" id="close-icon"></i>
+    </label>
+    <div class="nav-links">
+      <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/about" class="active">About</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="about-section">
-        <h1>About Nokukhanya Zwane</h1>
-        <p>Welcome to the About page of my portfolio!</p>
-        <p>
-            I'm Nokukhanya Zwane, an aspiring web developer passionate about transforming innovative ideas into
-            user-friendly, engaging websites. My journey in the tech world started with a deep curiosity for how
-            websites function behind the scenes. Over time, I have honed my skills in HTML, CSS, and JavaScript, and I'm
-            continuously learning new technologies and frameworks to stay at the forefront of the industry.
-        </p>
-        <p>
-            My goal is to create digital experiences that not only look good but also function seamlessly across all
-            devices. I specialize in front-end development and enjoy bringing designs to life in the browser. Let's work
-            together to create something great!
-        </p>
-
-        <div class="skills-section">
-            <h2>Skills</h2>
-            <ul>
-                <li><i class="fa-solid fa-code"></i>HTML & CSS</li>
-                <li><i class="fa-solid fa-laptop-code"></i>JavaScript</li>
-                <li><i class="fa-solid fa-mobile-screen-button"></i>Responsive Web Design</li>
-                <li><i class="fa-solid fa-database"></i>Basic Knowledge of Databases</li>
-                <li><i class="fa-solid fa-paint-brush"></i>UI/UX Design</li>
-            </ul>
-        </div>
-
-        <div class="projects-section">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on:</p>
-            <ul>
-                <li><i class="fa-solid fa-globe"></i>Personal Portfolio Website</li>
-                <li><i class="fa-solid fa-shopping-cart"></i>E-commerce Platform Prototype</li>
-                <li><i class="fa-solid fa-blog"></i>Blog Website</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="quick-links">
-            <div class="socials">
-                <ul>
-                    <li><a href="https://www.instagram.com/khanyi.nz" target="_blank">
-                            <i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="https://linkedin.com/in/nokukhanya-zwane" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/khanyansa" target="_blank">
-                            <i class="fa-brands fa-github"></i></a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>+27727220146</li>
-                    <li><i class="fa-solid fa-envelope"></i>khanyizwane.nsa&#64;gmail.com</li>
-                </ul>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;"
-                    allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </footer>
+  <section class="about">
+    <h1 class="heading">About Me</h1>
+    <p>
+      Hey there! I'm Nokukhanya Zwane, a passionate web developer dedicated to
+      crafting stunning and functional websites. With a blend of creativity, and
+      a knack for problem-solving, I thrive in the ever-evolving digital
+      landscape. My journey in web development began when I stumbled upon HTML
+      and CSS during my university years. Since then, I've immersed myself in
+      the ever-evolving world of web technologies, constantly learning and
+      adapting to stay ahead of the curve.
+    </p>
+  </section>
 </div>
 
+<section class="skills">
+  <h2><i class="fa-solid fa-code"></i>Skills</h2>
+  <div class="skills-container">
+    <div class="skills-content">
+      <p>
+        I've always been fascinated by technology and its potential to transform
+        the way we interact with the world. When I dove headfirst into coding, I
+        never looked back. I then honed my skills in front-end development
+        languages and tools including:
+      </p>
+      <ul>
+        <li><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+        <li><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+        <li><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+        <li><i class="fa-brands fa-github"></i><span>GitHub</span></li>
+      </ul>
+    </div>
+    <div class="skills-image">
+      <img src="./images/bg-about.svg" alt="" />
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects">
+    <h2><i class="fa-solid fa-gears"></i> Projects</h2>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="box">
+        <img src="./images/Calculator-Project2.jpg" alt="" />
+        <h3>Calculator</h3>
+        <p>
+          Calculator that performs basic arithmetic operations like addition,
+          subtraction, multiplication, and division.
+        </p>
+        <div class="project-links">
+          <a href="https://zncalculator.netlify.app/" target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+          <a href="https://github.com/khanyansa/Calculator" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="box">
+        <img src="./images/Travel-project.png" alt="" />
+        <h3>Traveling Agency</h3>
+        <p>
+          Traveling agency website is designed for travelers who want to explore
+          the world. It is built using only HTML and CSS.
+        </p>
+        <div class="project-links">
+          <a href="https://zntravels.netlify.app/" target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+          <a href="https://github.com/khanyansa/Travel-Website" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="box">
+        <img src="./images/Weather-project.png" alt="" />
+        <h3>Weather App</h3>
+        <p>
+          Weather web app that fetches weather data from an API and displays it
+          to the user based on their location.
+        </p>
+        <div class="project-links">
+          <a href="https://znweather.netlify.app/" target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+          <a href="https://github.com/khanyansa/Weather-App" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="box">
+        <img src="./images/Clock-project.png" alt="" />
+        <h3>Digital Clock</h3>
+        <p>
+          The website is designed to provide users with a simple yet elegant
+          digital clock that displays time on their devices.
+        </p>
+        <div class="project-links">
+          <a href="https://znclock.netlify.app/" target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+          <a href="https://github.com/khanyansa/Digital-Clock" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="quick-links">
+    <div class="socials">
+      <ul>
+        <li>
+          <a
+            href="https://www.instagram.com/khanyi.nz/?utm_source=qr&igsh=MWtzdWdseHQ1ODk4Yg%3D%3D"
+            target="_blank"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://za.linkedin.com/in/nokukhanya-zwane-b8b80321a?trk=public_profile_browsemap-profile"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/khanyansa" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-info">
+      <ul>
+        <li><i class="fa-solid fa-phone"></i>+27727220146</li>
+        <li><i class="fa-solid fa-envelope"></i>khanyizwane.nsa&#64;gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
