@@ -28,8 +28,8 @@
 
               {
                 "glob": "**/*",
-                "input": "src/app/assets",
-                "output": "assets"
+                "input": "src/app/assets/",
+                "output": "/assets/"
               }
               
             ],
